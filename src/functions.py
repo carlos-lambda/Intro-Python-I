@@ -10,3 +10,16 @@ num = int(num)
 
 # YOUR CODE HERE
 
+# flawed code, returns odd and even on 6 and nothing on 5
+
+
+def is_even(num):
+    if type(num) is int and num % 2 == 0:
+        print('is even')
+    if type(num) is int and num % 3 == 0 or num == 1:
+        print('is odd')
+    if type(num) != int:
+        print('That is not a number')
+
+
+is_even(num)

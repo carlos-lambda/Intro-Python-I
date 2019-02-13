@@ -35,16 +35,7 @@ def toNum(arg):
         return False
 
 
-m = toNum(input("enter month: "))
-if m == False:
-    m = datetime.date.today().month
-y = toNum(input("enter year: "))
-if y == False:
-    y = datetime.date.today().year
-
-user = (m, y)
-print(len(user))
-if (len(user) == False):
+if (len(arg) == False):
     print('Expecting input in the form of month [year]')
     exit()
 
